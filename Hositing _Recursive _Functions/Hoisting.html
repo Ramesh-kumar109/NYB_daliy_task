@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./hoisting.js"></script>
+</head>
+<body>
+   <div>
+        <h1>Hoisting</h1>
+        <p> * Hoistng is a default behaviour of moving declaration
+             of the top of the scope before the code execuite.<br>
+            * this happen automatically during the memory creation phase
+            brfore any code run actually </p>
+        
+       <h2>Hoisting Temporal dead zone</h2>
+      <p> Let and const are hoisted but not intialized they sit in the Temporal Dead Zone(TDZ)
+          until their declaration line runs, Asscessin them before that throw an error.</p>
+        
+          <h2>Function Declaration Hoisting</h2>
+          <p>Entire function Declaration are Hoisting you can call them before they are define </p>
+
+             <h2>Function Expression hoisting</h2>
+             <p> A Function expression are not hoisted only the variable declaration 
+                is hoisited as(undefine) not the function</p>
+            <h2> Arrow function Expression Hositing</h2>
+            <p> An arrow function Expression Behave the same as 
+                function expression not hositing</p>
+                <h1>Recursive Functions</h1>
+                <p> A recursion function is a function that call itself to solve a problem by breaking
+                     it down into smaller sub-problems.
+                </p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous concepts</title>
+    <script src="./Asynchronous.js" defer></script>
+</head>
+<body>
+    <div>
+        <h1>Asynchronous concepts</h1>
+        <p> This method can start the task and continue executing
+             other code without waiting for the task to finish</p>
+
+             <ul>
+                <li>SetTimeout() method</li>
+                <li>Setinterval() method</li>
+                <li>clearTimeout() method</li>
+                <li>clearinerval() method</li>
+             </ul>
+
+             <h1>settimeout() method</h1>
+             <p>settimeout() method is a js function and 
+                it will execute the function some specified amount of time </p>
+                <h2> setinterval() method</h2>
+                <p>setinterval() method is a function JS method used to function repated at fixed Timed</p>
+
+                <h2> clearinterval() method</h2>
+                <p>clearinterval() method is a JS method used to stop the setinterval() method</p>
+                  
+                <h2> cleartimeout() method</h2>
+                <p>cleartimeout() method is a JS method used to cancel the settimeout() method before execute </p>
+</div>
+
+
+            
+                  <div>
+                    <h1>Event Bubbling.</h1>
+                    <p>it is process where an event triggered on a chlid element movie updwards to its parent element</p>
+                    <div id="parent">
+                          <button id="child">click bubbling</button>
+                    </div>
+                    <h1>Event Capturing.</h1>
+                    <p>it is process of where an element travel form parent element to child element
+                        before reaching.
+                    </p>
+                    <div id="parent1">
+                          <button id="child1">click capturing</button>
+                    </div>
+                           
+                   
+                    <div>
+                         <h1>Event Delegration.</h1>
+                         <p> it is the techique where we attach one event listener to a parent element
+                             instead of adding sepearte event listener to every child element
+
+                         </p>
+                          <ul id="item"> Furits</ul>
+                          <li id="apple">Apple</li>
+                          <li id="banana">banana</li>
+                          <li id="cherry">cherry</li>
+                    </div>
+
+                    <div>
+                        <h1>Normal event</h1>
+                        <p>it is handling an event directly on te element using eventlistener</p>
+                        <button id="btn">click</button>
+                    </div>
+
+
+                    <div>
+                        <h1></h1>
+
+                    </div>
+                  </div>
+</body>
+</html>

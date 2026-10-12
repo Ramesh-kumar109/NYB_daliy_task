@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .content{
+            height:2000px;
+            padding-top: 100px;
+
+        }
+        .content1{
+            margin:100px;
+            height:5000px;
+            padding-top: 1000px;
+        }
+        #scroll{
+            position: fixed;
+            top:10px;
+            left:10px;
+            right:10px;
+            padding:15px;
+            border:1px solid black;
+        }
+        #scroll1{
+            position: fixed;
+            top:10px;
+            left:10px;
+            right:10px;
+            padding:15px;
+            border:1px solid black;
+        }
+    </style>
+    <script src="./debouncing.js"></script>
+</head>
+<body>
+    <div id="scroll">
+        scroll the page
+    </div>
+    <div class="content">
+      <h1> without Throttling</h1>
+      <p>Keeps scrolling</p>
+    </div>
+    <div id="scroll1">
+        scroll the page
+    </div>
+    <div class="content1">
+      <h1> with Throttling</h1>
+      <p>Keeps scrolling</p>
+    </div>
+
+
+
+</body>
+</html>

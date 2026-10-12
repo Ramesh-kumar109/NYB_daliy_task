@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM fundamentals</title>
+    <script src="./DOM.js" defer></script>
+</head>
+<body>
+    <div>
+        <h2>Reading DOM property</h1>
+        <p>reading DOM property means accessing the current value from the element property
+            in JavaScript</p>
+        <div>
+            <input id="username" value="ramesh" type="text"  class="form-input" disabled>
+        </div>
+
+        <Div>
+            <h2>Searching in DOM element</h1>
+             <ol>
+                 <li>1.getElementById()</li> 
+                 <li>2. getElementByClassName()</li>
+                 <li>3.Queryselector()</li>
+                 <li> 4. QueryselectorAll()</li>
+             </ol>
+
+             <h2>1.getElementById()</h1>
+    <p>using  in this method accessing form the element on ID or Attributes form the web page</p>
+         <p id="para">Welcome</p>
+
+         <h2>2.getElementByClassName()</h2>
+   <p>using in this method to accessing the class name and it will return HTML collection</p>
+         <p class="id">HTML</p>
+         <p class="id">CSS</p>
+  
+         <h2>3.getelementbyTagName()</h2>
+         <p> Select the element using their  HTML tag name</p>
+         <p>First name</p>
+         <p>last name</p>
+
+
+         <h2>4.queryselector() method</h2>
+         <p>using in this method we can access the first matching element using a css seletor.</p>
+         
+         <h2 id="header"> Welcome to my website</h2>
+         <p class="id"> Hello world</p>
+
+         <h2>5.queryselectorAll()</h2>
+         <p> using in this method matching all elements and return as nodelist</p>
+
+         <p class="fruits">Apple</p>
+         <p class="fruits">Banana</p>
+         <p class="fruits">Orange</p>
+         
+   </Div>
+
+              <div id="parent">
+                     <p id="child">welcome</p>
+                     <p id="child1">Hello</p>
+                     <p id="child2">world</p>
+              </div>
+
+
+              <div>
+                <h2>Add Event Listeners</h2>
+               <button id="click"> click me</button>
+              </div>
+
+
+              <h2>Creating an element and add in DOM</h2>
+              <div id="div">
+
+              </div>
+              <div>
+                <h2>Event Bubbling</h2>
+                <ol id="fruit">
+                    <li id="child5">Apple</li>
+                    <li>Orange</li>
+                    <li>Grapes</li>
+                </ol>
+              </div>
+
+               <h2>Event Capturing</h2>
+                <ol id="parents">
+                    <li id="child6">hello</li>
+                </ol>
+
+                <h2>Event Delegation</h2>
+                <div>
+                    <ol id="vegetables">
+                        <li>carrot</li>
+                        <li>beans</li>
+                        <li>Potato</li>
+                    </ol>
+                </div>
+    </div>
+</body>
+</html>

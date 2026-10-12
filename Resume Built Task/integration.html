@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <h1> integration</h1>
+    <p>three main ways to add javaScript<br>
+        1.Inline Javascrit <br>
+        2.Internal Javascript<br>
+        3.External JavaScript
+    </p>
+    <p>
+        Inline code written directly inside an Html tags attributes for example see  the line no:19
+    </p>
+    <button onclick="alert('hello')">Next</button>
+
+    <h2 id="demo"> internal JS</h2>
+    <p>internal: code placed inside a script tag within the HTml files</p>
+    <button onclick="root()">signup</button>
+    <Script>
+        function root(){
+            document.getElementById("demo").textContent="Internal Java Script!"
+        };
+    </Script>
+    <h2 id="text">External JS</h2>
+<p>external javascript : to create a new.js files linked with script Tags example line 31</p>
+<button onclick="external()">External button</button>
+    </div>
+<script src="javascript.js"></script>
+</body>
+</html>
