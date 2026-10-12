@@ -1,4 +1,10 @@
 git work flow has 4 steps
 1, working directory (WD):-
-creates or modfiy files in vscode , after that u have to add ur tasks to remote(github) git add .
-2,staging area :- choose which changes to include in the next save.
+creates or modfiy files in vscode , after that u have to add ur tasks to remote(github) 
+2,staging area :- git add . or git add file name, choose which changes to include in the next save.
+3.local repo:-by using git commit  record a snapshot of ur staged  changes.
+4 remote repo (github repository):-by using git push , upload ur commits to github  
+
+
+
+

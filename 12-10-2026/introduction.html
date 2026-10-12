@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction of CSS</title>
+ <style>
+        h3{
+            color:aquamarine;
+            font-size: 20px;
+        }
+        p{
+            color:pink;
+            font-size: 10px;
+        }
+    </style>
     <link rel="stylesheet" href="./introduction.css">
 </head>
 <body>
@@ -49,15 +59,178 @@
 
                         <h1> Internal CSS</h1>
                         <p>Internal CSS is written inside "Style tag"
-                             usually within the "head tag" in htmldocument</p>
-
-
-                             <p>this a para</p>
-
-
-                </p>
+                             usually within "headtag" in htmldocument </p>
 
                 
-    </div>
+                     <h3>Welcome </h3>
+                     <p>This is internal CSS</p>
+                    
+
+                     <h3>External CSS</h4>
+                     <p>External CSS code in a style HTML Pges by written CSS Code  In a separate
+                        "css.files"  we connect that files to html using link tag
+                     </p>
+                </p>
+            </div>
+
+            <div>
+                <h2> CSS Selectors</h2>
+                <p>Selectors are used to find the Html element in the web page 
+                    for given css style to the content</p>
+                  <ol>
+                    <li>1.Element Selector</li>
+                    <li>2.id Selector</li>
+                    <li>3.Class Selector</li>
+                    <li>4.Group selector</li>
+                    <li>5.Universal Selector</li>
+                    <li>6.Attribute selector</li>
+                    <li>7.Descendent selector</li>
+                    <li>8.child selector</li>
+                    <li>9.Adjcentant Sibling selectors</li>
+                    <li>11.General sibling selectors</li>
+                  </ol>  
+
+                  <h3>1. Element selector</h3>
+                  <p>The Element selector  select the Html content 
+                    for apply the css style by Tagname </p>
+                     <h4> Heading 1</h4>
+                     <p> Good Morning To ALL!...</p>
+                     <p> Having a nice day!...</p>
+                     <style>
+                        h4,p{
+                            color:black;
+                            font-family: 'Times New Roman',serif;
+                            background-color:cornsilk;
+                            text-align: center;
+
+                        }
+                     </style>
+
+                     <h5 id="heading">Id selector</h5>
+                     <p id="para">the id selector which is used to</p>
+                     <p id="para1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Dolorem soluta sequi obcaecati. Velit, porro. 
+                        Voluptas deserunt debitis voluptatem aspernatur
+                        fuga nam magni libero, quibusdam, fugiat, 
+                        exercitationem quia totam autem provident.</p>
+
+                        <h5 class="main1">Class selector</h5>
+                        <p class="main1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Dolorem soluta sequi obcaecati. Velit, porro. 
+                        Voluptas deserunt debitis voluptatem aspernatur
+                        fuga nam magni libero, quibusdam, fugiat, 
+                        exercitationem quia totam autem provident.</p>
+                        <h6 class="main2"> Heading</h6>
+                        <p class="main2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Dolorem soluta sequi obcaecati. Velit, porro. 
+                        Voluptas deserunt debitis voluptatem aspernatur
+                        fuga nam magni libero, quibusdam, fugiat, 
+                        exercitationem quia totam autem provident.</p>
+
+
+                        <h4 id="ma"> Group selector</h4>
+                        <p class="pa">lorem</p>
+
+                        <h4 id="h4">group selector</h4>
+                        <p class="pa1"> group selector means  itis combination of id selector 
+                            and element selectors and class selectors.</p>
+
+                            <h4>Universal selectors</h4>
+                            <p> the selector which is used to select all the entity in aweb page
+                                for giving css style property is known as universal selector.
+                                which is used to # character.
+                            </p>
+
+
+                            <h2>Attribute Selector</h2>
+                            <p> an attribute selector select html element based on the
+                                attributes or attribute values  using [] square brackets</p>
+                                <input type="text">
+
+                                <h2>Descendant selector</h2>
+                                <p>Select all matching elements inside another element,
+                                    even if they are nested deeply.
+                                </p>
+
+
+                                <h2>Child selector</h2>
+                                <p>Only select direct children of an elements. using greater than symbol(>)</p>
+
+                                <div>
+                                    <p>Direct child</p>
+                                    <section>
+                                        <p>nested child</p>
+                                    </section>
+                                </div>
+
+                               <h2>Adjacent sibling selector</h2>
+                               <p>select the element that comes immediately after another element,
+                                when both share the same parents. using (+)</p>
+
+                                <div>
+                                    <h2>heading</h2>
+                                    <p>first para</p>
+                                    <p>second para</p>
+                                </div>
+                                <h2> General sibling selector</h2>
+                                <p>Select all matching sibling elements that comes form a specified
+                                    element and share the same parents.</p>
+                                    <div>
+                                        <h2>heading</h2>
+                                        <p>first para</p>
+                                        <span>some text</span>
+                                        <p>second para</p>
+                                    </div>
+                                
+
+
+ 
+            </div>
+
+
+            <div>
+                <h2>border and background property</h2>
+                <p> css border properties are used to create and design broder around Html
+                    elements. background property are used to add colors or images behind the content
+                    of an element.</p>
+                    <ol>
+                        <li>Border style.</li>
+                        <li>border width</li>
+                        <li>border color</li>
+                        <li>border radius</li>
+                        <li>background color</li>
+                        <li>background image</li>
+                        <li>background position</li>
+                        <li>background repeat</li>
+                        <li>background size</li>
+                    </ol>
+                    <h1>Border style</h1>
+                    <p> the border style is perform in appearance in a boders</p>
+
+                    <h1>Border width</h1>
+                    <p> the border width is perform in thickness in a boders</p>
+
+                    <h1>Border color</h1>
+                    <p> the border color is perform in specified color in boders</p>
+
+                    <h1>Border radius</h1>
+                    <p> the border radius is perform in rounded  in boders corners</p>
+                    
+                    <h1>background color</h1>
+                    <p> the property set  background color is perform of an element</p>
+
+                    <h1>background image</h1>
+                    <p> the property add an image behind the element</p>
+
+                    <h1>background Position</h1>
+                    <p> the property control background image in appears.</p>
+
+                    <h1>background repeat</h1>
+                    <p> the property contro where background image  repeat</p>
+
+                    <h1>background size</h1>
+                    <p> the property specified the size of an background image</p>
+
+            </div>
 </body>
 </html>
