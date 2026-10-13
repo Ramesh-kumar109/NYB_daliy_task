@@ -1,0 +1,154 @@
+.box{
+    width: 200px;
+    height:230px;
+    background-color:aqua;
+}
+/* percentage(%) */
+.box1{
+    width:150%;
+    height:150%;
+    background-color:aqua;
+}
+
+/* viewport width(VW) */
+
+.box2{
+    width:10vw;
+    height:20vw;
+    background-color:aqua;
+}
+/* viewport height(Vh) */
+.box3{
+    width:150vh;
+    height:50vh;
+    background-color:aqua;
+}
+/* min-width*/
+
+.box4{
+
+   min-width: 200px;
+
+ background-color:aqua
+}
+/* max-width*/
+.box5{
+    width:100%;
+   max-width: 500px;
+ background-color:aqua
+}
+
+/* min-height*/
+.box6{
+    min-height: 150px;
+    background-color: yellow;
+}
+/* max-height*/
+.box7{ 
+    max-height: 300px;
+    background: yellow;
+}
+/* CSS Box model*/
+/* CSS Box model in content-box*/
+
+#box{
+    width:200px;
+    height:200px;
+    padding: 20px;
+    border: 5px solid blue;
+    margin-left: 400px;
+    background-color: lightyellow;
+    box-sizing:content-box;
+    
+}
+
+/* CSS Box model*/
+/* CSS Box model in border-box*/
+#box1{
+    width:200px;
+    padding:20px;
+    margin: 400px;
+    margin-top: -400px;
+    margin-left: 700px;
+    background-color: red;
+    border:5px solid greenyellow;
+    box-sizing:border-box;
+}
+
+
+#class{
+    width:200px;
+    padding:20px;
+    margin: 400px;
+    border:2px solid blue;
+    outline: 4px solid red;
+}
+
+#dis{
+width: 240px;
+height:200px;
+background-color: brown;
+padding :20px;
+margin: 800px;
+border: 2px solid red;
+display:block;
+overflow-inline: visible;
+}
+#block{
+    width:250px;
+    height:200;
+    padding:10px;
+    margin: 800px;
+    margin-top: -500px;
+    display:inline-block;
+    border:5px solid red;
+}
+span{
+    display: inline;
+    background-color: purple;
+}
+#boxes
+{
+    display: inline-block;
+    background-color: aqua;
+}
+
+.parent{
+position: relative;
+height:150px;
+width: 200px;
+background-color: lightgreen;
+}
+.child{
+position:absolute;
+top: 150px;
+right:10px;
+background-color: orange;
+}
+#b1{
+    height: 100px;
+    width:150px;
+    padding: 1px;
+    background-color: red;
+    float: left;
+    margin-left: 800px;
+}
+
+#b2{
+   height: 100px;
+    width:150px;
+    padding: 2px;
+    background-color: yellow;
+    float: right;
+    margin-right: 890px;
+}
+
+#b3{
+    height: 50px;
+    width:310px;
+    padding: 1px;
+    background-color:orange;
+    clear: both;
+    margin: 800px;
+    margin-top: 100px;   
+}
