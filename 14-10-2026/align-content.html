@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align Content Playground</title>
+  <link rel="stylesheet" href="./align-content.css">
+</head>
+<body>
+
+  <h1>CSS align-content Playground</h1>
+  <p>Choose a property and observe the position of multiple rows.</p>
+
+  <label for="alignment">Choose align-content:</label>
+
+  <select id="alignment">
+    <option value="stretch">stretch</option>
+    <option value="flex-start">flex-start</option>
+    <option value="flex-end">flex-end</option>
+    <option value="center">center</option>
+    <option value="space-between">space-between</option>
+    <option value="space-around">space-around</option>
+    <option value="space-evenly">space-evenly</option>
+  </select>
+
+  <div class="container" id="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+  </div>
+
+  <h2>Compare all properties</h2>
+  <div class="comparison">
+    <div>
+      <h3>stretch</h3>
+      <div class="demo stretch">
+        <span>1</span><span>2</span><span>3</span>
+        <span>4</span><span>5</span><span>6</span>
+      </div>
+    </div>
+
+    <div>
+      <h3>flex-start</h3>
+      <div class="demo flex-start">
+        <span>1</span><span>2</span><span>3</span>
+        <span>4</span><span>5</span><span>6</span>
+      </div>
+    </div>
+
+    <div>
+      <h3>flex-end</h3>
+      <div class="demo flex-end">
+        <span>1</span><span>2</span><span>3</span>
+        <span>4</span><span>5</span><span>6</span>
+      </div>
+    </div>
+
+    <div>
+      <h3>center</h3>
+      <div class="demo center">
+        <span>1</span><span>2</span><span>3</span>
+        <span>4</span><span>5</span><span>6</span>
+      </div>
+    </div>
+
+    <div>
+      <h3>space-between</h3>
+      <div class="demo space-between">
+        <span>1</span><span>2</span><span>3</span>
+        <span>4</span><span>5</span><span>6</span>
+      </div>
+    </div>
+
+    <div>
+      <h3>space-around</h3>
+      <div class="demo space-around">
+        <span>1</span><span>2</span><span>3</span>
+        <span>4</span><span>5</span><span>6</span>
+      </div>
+    </div>
+
+    <div>
+      <h3>space-evenly</h3>
+      <div class="demo space-evenly">
+        <span>1</span><span>2</span><span>3</span>
+        <span>4</span><span>5</span><span>6</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const select = document.getElementById("alignment");
+    const container = document.getElementById("container");
+
+    select.addEventListener("change", function () {
+      container.style.alignContent = this.value;
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Align Items Playground</title>
+  <link rel="stylesheet" href="./flex_items.css">
+</head>
+<body>
+
+  <h1>CSS Flexbox: align-items</h1>
+  <p>Change the property and observe how the boxes move.</p>
+
+  <label for="alignment">Choose align-items:</label>
+  <select id="alignment">
+    <option value="stretch">stretch</option>
+    <option value="flex-start">flex-start</option>
+    <option value="flex-end">flex-end</option>
+    <option value="center">center</option>
+    <option value="baseline">baseline</option>
+  </select>
+
+  <div class="container" id="playground">
+    <div class="item item1">Box 1</div>
+    <div class="item item2">Box 2</div>
+    <div class="item item3">Box 3</div>
+  </div>
+
+  <h2>Compare all properties</h2>
+
+  <div class="comparison">
+    <section>
+      <h3>stretch</h3>
+      <div class="demo stretch">
+        <div>Box 1</div><div>Box 2</div><div>Box 3</div>
+      </div>
+    </section>
+
+    <section>
+      <h3>flex-start</h3>
+      <div class="demo flex-start">
+        <div>Box 1</div><div>Box 2</div><div>Box 3</div>
+      </div>
+    </section>
+
+    <section>
+      <h3>flex-end</h3>
+      <div class="demo flex-end">
+        <div>Box 1</div><div>Box 2</div><div>Box 3</div>
+      </div>
+    </section>
+
+    <section>
+      <h3>center</h3>
+      <div class="demo center">
+        <div>Box 1</div><div>Box 2</div><div>Box 3</div>
+      </div>
+    </section>
+
+    <section>
+      <h3>baseline</h3>
+      <div class="demo baseline">
+        <div>Small</div><div class="large">Large</div><div>Medium</div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const dropdown = document.getElementById("alignment");
+    const playground = document.getElementById("playground");
+
+    dropdown.addEventListener("change", function () {
+      playground.style.alignItems = this.value;
+    });
+  </script>
+
+</body>
+</html>

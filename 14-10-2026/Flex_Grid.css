@@ -1,0 +1,182 @@
+.container{
+    display: flex;
+    background-color: grey;
+    gap: 10px;
+    padding: 10px;
+}
+.item{
+    background-color: red;
+    padding: 20px;
+}
+
+/* flex-direction*/
+#container{
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+    flex-direction: row;
+}
+.item1{
+    background-color: red;
+    padding: 20px;
+}
+
+/* Justify-content*/
+.container1{
+   display: flex; 
+   justify-content:center;
+   padding: 5px;
+   gap: 10px;
+}
+#box{
+  padding: 20px;
+  background-color: red;
+}
+
+/* align-item */
+.content{
+    display: flex;
+   
+  
+    padding: 5px;
+    gap: 10px;
+
+}
+#box1{
+     /* align-items:baseline; */
+    background-color: blue;
+      width:200px;
+    height:200px;
+   
+}
+#box2{
+     align-items:center;
+    background-color: aqua;
+      width:300px;
+    height:300px;
+    
+}
+#box3{
+     align-items:stretch;
+    background-color: pink;
+      width:100px;
+    height:100px;
+  
+}
+
+/* align-content */
+#content1{
+display: flex;
+flex-wrap: wrap;
+align-content: space-evenly;
+padding: 5px;
+gap:10px;
+}
+#boxes{
+ padding: 20px;
+ background-color: red;
+}
+/* flex-warp */
+#warp{
+display: flex;
+flex-wrap: wrap-reverse;
+padding: 10px;
+gap: 20px;
+}
+#boxes1{
+padding: 20px;
+background-color: red;
+}
+/* Order */
+
+#order{
+display: flex;
+padding: 10px;
+gap: 20px;
+}
+#box21{
+    padding: 20px;
+    background-color: red;
+    order: 2;
+}
+#box22{
+    padding: 20px;
+    background-color: red;
+    order: 3;
+}
+#box23{
+    padding: 20px;
+    background-color: red;
+    order: 1;
+}
+
+/* flex-grow */
+#flex-grow{
+    display: flex;
+    padding: 2px;
+    gap: 10px;
+}
+#box11{
+    flex-grow: 0;
+    padding: 10px;
+    background-color:red 
+    
+}
+#box12{
+    flex-grow: 1;
+    padding: 10px;
+    background-color:red 
+}
+#box13{
+    flex-grow: 0;
+    padding: 20px;
+    background-color:red 
+}
+/* flex-shrink */
+
+#flex-shrink{
+    display: flex;
+    padding: 2px;
+    gap: 10px;
+}
+#box14{
+    flex-shrink: 0;
+    padding: 10px;
+    background-color:red 
+    
+}
+#box15{
+    flex-shrink: 1;
+    padding: 10px;
+    background-color:red 
+}
+#box16{
+    flex-shrink: 2;
+    padding: 20px;
+    background-color:red 
+}
+/* flex-basis */
+
+#flex-basis{
+    display: flex;
+    padding: 2px;
+    gap: 10px;
+}
+#box17{
+    flex-basis:150px;
+    padding: 10px;
+    background-color:red 
+    
+}
+#box18{
+    flex-basis:200px;
+    padding: 10px;
+    background-color:red 
+}
+#box19{
+    padding: 20px;
+    background-color:red 
+}
+
+/*CSS Grid*/
+

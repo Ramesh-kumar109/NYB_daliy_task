@@ -1,0 +1,16 @@
+align items,text,content,flex wrap 
+align items means container
+align itemsstart,
+align items  end
+align items  center
+ align items stretch
+align item baseline:- align items according to their text baseline
+box 1 has width and height 200 px in that box u wrote text , boxe  width and height 100px 
+text-align means text 
+text-align left,right,center,justify 
+
+
+
+//flex wrap
+workin on same properties of align content 
+by using flex wrap properties

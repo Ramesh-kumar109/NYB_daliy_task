@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flex Wrap Playground</title>
+  <link rel="stylesheet" href="./flex-wrap.css">
+</head>
+<body>
+
+  <header>
+    <h1>CSS Flex Wrap Playground</h1>
+    <p>Change the flex-wrap property and watch the boxes move.</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <label for="wrap">Choose flex-wrap:</label>
+      <select id="wrap">
+        <option value="nowrap">nowrap</option>
+        <option value="wrap" selected>wrap</option>
+        <option value="wrap-reverse">wrap-reverse</option>
+      </select>
+
+      <label for="width">Container width: <span id="widthValue">420px</span></label>
+      <input type="range" id="width" min="220" max="700" value="420">
+    </section>
+
+    <section>
+      <h2>Live Demo</h2>
+      <div class="container" id="container">
+        <div class="item">Box 1</div>
+        <div class="item">Box 2</div>
+        <div class="item">Box 3</div>
+        <div class="item">Box 4</div>
+        <div class="item">Box 5</div>
+        <div class="item">Box 6</div>
+        <div class="item">Box 7</div>
+        <div class="item">Box 8</div>
+      </div>
+      <p id="description">Items wrap onto multiple lines when needed.</p>
+    </section>
+
+    <section class="comparison">
+      <h2>Compare All Three Values</h2>
+
+      <h3>1. nowrap</h3>
+      <div class="container demo nowrap">
+        <div class="item">1</div><div class="item">2</div>
+        <div class="item">3</div><div class="item">4</div>
+        <div class="item">5</div><div class="item">6</div>
+      </div>
+
+      <h3>2. wrap</h3>
+      <div class="container demo wrap">
+        <div class="item">1</div><div class="item">2</div>
+        <div class="item">3</div><div class="item">4</div>
+        <div class="item">5</div><div class="item">6</div>
+      </div>
+
+      <h3>3. wrap-reverse</h3>
+      <div class="container demo wrap-reverse">
+        <div class="item">1</div><div class="item">2</div>
+        <div class="item">3</div><div class="item">4</div>
+        <div class="item">5</div><div class="item">6</div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const wrapSelect = document.getElementById("wrap");
+    const widthInput = document.getElementById("width");
+    const widthValue = document.getElementById("widthValue");
+    const container = document.getElementById("container");
+    const description = document.getElementById("description");
+
+    function updateDemo() {
+      container.style.flexWrap = wrapSelect.value;
+      container.style.width = widthInput.value + "px";
+      widthValue.textContent = widthInput.value + "px";
+
+      const messages = {
+        "nowrap": "All items stay on one line and may overflow the container.",
+        "wrap": "Items move onto new lines when there is not enough space.",
+        "wrap-reverse": "Items wrap onto new lines in the reverse cross-axis direction."
+      };
+
+      description.textContent = messages[wrapSelect.value];
+    }
+
+    wrapSelect.addEventListener("change", updateDemo);
+    widthInput.addEventListener("input", updateDemo);
+
+    updateDemo();
+  </script>
+
+</body>
+</html>

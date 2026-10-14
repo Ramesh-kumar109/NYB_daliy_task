@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Text Alignment Playground</title>
+  <link rel="stylesheet" href="./text-align.css">
+</head>
+<body>
+
+  <header>
+    <h1>CSS Text Alignment</h1>
+    <p>Learn how text-align changes text inside a container.</p>
+  </header>
+
+  <main>
+    <section class="playground">
+      <h2>Try It Yourself</h2>
+
+      <label for="alignment">Choose text alignment:</label>
+      <select id="alignment">
+        <option value="left">left</option>
+        <option value="right">right</option>
+        <option value="center">center</option>
+        <option value="justify">justify</option>
+        <option value="start">start</option>
+        <option value="end">end</option>
+      </select>
+
+      <label for="width">Container width:</label>
+      <input type="range" id="width" min="250" max="650" value="450">
+      <span id="widthValue">450px</span>
+
+      <div class="text-box" id="textBox">
+        <h3>Welcome to CSS!</h3>
+        <p>
+          CSS text alignment controls how text is positioned
+          horizontally inside an element. You can align text
+          to the left, right, center, or justify it across the
+          available line width. Try each option and observe
+          the differences.
+        </p>
+      </div>
+    </section>
+
+    <section class="comparison">
+      <h2>Compare All Properties</h2>
+
+      <article>
+        <h3>text-align: left</h3>
+        <p class="left">CSS makes websites beautiful and easy to read.</p>
+      </article>
+
+      <article>
+        <h3>text-align: right</h3>
+        <p class="right">CSS makes websites beautiful and easy to read.</p>
+      </article>
+
+      <article>
+        <h3>text-align: center</h3>
+        <p class="center">CSS makes websites beautiful and easy to read.</p>
+      </article>
+
+      <article>
+        <h3>text-align: justify</h3>
+        <p class="justify">
+          CSS makes websites beautiful and easy to read.
+          Text spacing expands so the lines align with both
+          edges of the paragraph where possible.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const alignment = document.getElementById("alignment");
+    const textBox = document.getElementById("textBox");
+    const width = document.getElementById("width");
+    const widthValue = document.getElementById("widthValue");
+
+    alignment.addEventListener("change", () => {
+      textBox.style.textAlign = alignment.value;
+    });
+
+    width.addEventListener("input", () => {
+      textBox.style.width = width.value + "px";
+      widthValue.textContent = width.value + "px";
+    });
+  </script>
+
+</body>
+</html>

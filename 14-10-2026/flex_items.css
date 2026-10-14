@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f6fb;
+  color: #1f2937;
+  padding: 24px;
+  margin: 0;
+}
+
+h1 {
+  color: #2563eb;
+}
+
+label {
+  display: inline-block;
+  margin: 16px 8px 16px 0;
+  font-weight: bold;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #94a3b8;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Main interactive playground */
+.container {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  height: 180px;
+  padding: 12px;
+  background: #dbeafe;
+  border: 2px dashed #2563eb;
+  border-radius: 10px;
+}
+
+.item {
+  flex: 1;
+  padding: 12px;
+  background: #60a5fa;
+  color: #10213a;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Comparison examples */
+.comparison {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+section {
+  min-width: 0;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+.demo {
+  display: flex;
+  gap: 6px;
+  height: 120px;
+  padding: 8px;
+  background: #dbeafe;
+  border: 2px dashed #2563eb;
+  border-radius: 8px;
+}
+
+.demo div {
+  flex: 1;
+  min-width: 0;
+  padding: 6px;
+  background: #60a5fa;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Each align-items property */
+.stretch {
+  align-items: stretch;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.flex-end {
+  align-items: flex-end;
+}
+
+.center {
+  align-items: center;
+}
+
+.baseline {
+  align-items: baseline;
+}
+
+.baseline .large {
+  font-size: 26px;
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 14px;
+  }
+}
