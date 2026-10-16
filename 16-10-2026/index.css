@@ -1,0 +1,49 @@
+/* CSS Grid container*/
+.container{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    gap: 20px;
+}
+
+/* CSS grid-template-row*/
+.contain{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 60px 60px 60px ;
+    gap: 20px;
+}
+.item1{
+    
+    background-color: antiquewhite;
+}
+.item2{
+    background-color: pink;
+}
+.item3{
+    background-color: lightcoral;
+}
+.item4{
+    background-color: lightblue;
+}
+/* CSS grid-template-column*/
+.contains{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 100px 100px 100px ;
+    grid-template-rows: 60px 60px 60px;
+}
+.item5{
+    
+    background-color: brown;
+}
+.item6{
+    background-color: blue;
+}
+.item7{
+    background-color: purple;
+}
+.item8{
+    background-color: aqua;
+}
+
+/* grid-column*/
