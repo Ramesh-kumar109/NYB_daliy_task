@@ -8,7 +8,192 @@
 </head>
 <body>
     <div>
-        
+        <h1 id="title" class="heading">advanced css selector</h1>
     </div>
+
+    <div id="parent">
+       <h1 > Inheritance concepts </h1>
+       <p> the child html element css property values are come form parent html element</p>
+    </div>
+    
+    <div> 
+        <h1> pseudo-classes </h1>
+        <ol><label>Types of pseudo-classes </label>
+            <li>start with (:)</li>
+            <li>:hover</li>
+            <li>:focus</li>
+            <li>:active</li>
+            <li>:first-child</li>
+            <li>:last-child</li>
+            <li>:nth-child()</li>
+        </ol>
+    </div>
+        
+    <div>
+      <div>
+        <h1>1. :hover</h1>
+        <p>it will apply the style when the mouse pointer move over an element</p>
+        <button> Click me</button>
+        </div>
+      <div>
+            <h2>2.:focus</h2>
+            <p>when the element recevied focus on the user click the input field or navigation are used </p>
+            <input type="text" placeholder="Enter your name" >
+     </div>
+
+     <div>
+           <h2>3.:active</h2>
+           <p>which is used to an element being active when the user press the button </p>
+           <button>press the button</button> 
+     </div>
+
+     <div>
+        <h2>4.:first-child</h2>
+        <p>which is used to an element first child of is parents elemenet change the color.</p>
+        <ol>
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Grapes</li>
+        </ol>
+     </div>
+           <div>
+            <h2>5.:last-child</h2>
+            <p></p>
+            <ol>
+                <li>Apple</li>
+                <li>Orange</li>
+                <li>grapes</li>
+                <li>mango</li>
+            </ol>
+           </div>
+           <div>
+             <h2>6.:nth-child</h2>
+             <p></p>
+             <ol>
+                <li>Apple</li>
+                <li>Orange</li>
+                <li>grapes</li>
+                <li>mango</li>
+             </ol>
+           </div>
+    </div>
+
+
+    <div>
+        <div>
+        <h1>pseudo-element in :: before</h1>
+        <h2>world!</h2>
+        <p> which is used to add the content add before the element</p>
+      </div>
+
+
+      <div>
+        <h1> ::after</h1>
+        <h3>Hello</h3>
+        <p> which is used to add the content add after the element</p>
+    </div>
+
+    <div>
+        <h1> ::first-letter</h1>
+        <p class="para">Style with the first text of the element.</p>
+
+    </div>
+        <h1> ::first-line</h1>
+        <p class="para2">style with the first line of the element. <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Voluptas dicta eveniet magni, placeat quaerat optio exercitationem asperiores corrupti?
+             Temporibus vero minus maxime sed veniam ut,
+             illo delectus vel perspiciatis quos!
+        </p>
+    </div>
+    
+    <div>
+        <h1>Attributes.1.basic attributes selector</h1>
+        <input type="text" required>
+        <input type="text">
+
+        <h1>exact with selector</h1>
+        <input type="text" placeholder="enter your mail">
+        <input type="password" placeholder="enter your password">
+
+        <h1>starts with selector</h1>
+        <a href="https://www.instagram.com/">instagram</a>
+
+
+        <h1>ends with selector</h1>
+        <a href="note.pdf">Downloads notes</a>
+
+        <h1>contain selector</h1>
+        <a href="https://www.google.com/">GOOGLE</a>
+
+        <h1>word selector</h1>
+        <p class="highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Reiciendis quam alias pariatur iusto aperiam debitis, 
+            atque voluptates non aspernatur ipsam inventore 
+            sunt rem architecto beatae neque reprehenderit error dicta ipsum?</p>
+
+            <p class=" main highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Reiciendis quam alias pariatur iusto aperiam debitis, 
+            atque voluptates non aspernatur ipsam inventore 
+            sunt rem architecto beatae neque reprehenderit error dicta ipsum?</p>
+
+            <h1>start with value or value followed by a hyphen</h1>
+            <p lang="en">English</p>
+            <p lang="en-us">US English text</p>
+    </div>
+
+    <div>
+        <h4>using var()</h4>
+        <p class="para3">learning CSS property</p>
+        <div class="box">this is a box</div>
+    </div>
+ 
+     <div>
+        <h1>linear  gradient</h1>
+        <div id="box"></div>
+
+        <h1>radial Gradient</h1>
+        <div id="box1"></div>
+
+        <h1>conci graident</h1>
+        <div id="box2"></div>
+     </div>
+
+     <div>
+        
+     <div>
+        <h1>box-shadow</h1>
+            <div id="box3"> CSS BOX shadow elements</div>        
+     </div>
+
+     <div>
+        <h1>text-shadow</h1>
+        <div id="text"> hello world </div>
+     </div>
+</div>
+
+
+      <div>
+        <h1>opacity</h1>
+        <div class="box9 box5">opacity 1</div>
+        <div class="box9 box6">opacity 0.5</div>
+        <div class="box9 box7">opacity 0.2</div>
+      </div>
+
+      <div>
+        
+        <div>
+            <h1>imporatant</h1>
+            <p class="imp">Hello Important </p>
+        </div>
+
+        <div>
+            <h1>specificity</h1>
+            <div>
+                <p class="text" id="heading" >Hello World</p>
+            </div>
+        </div>
+      </div>
+    
 </body>
 </html>

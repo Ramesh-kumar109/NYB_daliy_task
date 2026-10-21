@@ -1,0 +1,216 @@
+  /* h1{
+      color: blue;  /* Element selector => second priority */
+    /*               */
+  #title{
+       color: red;  /* id selector => first priority */ 
+        }
+  .heading{
+       color: aqua;  /* class selector => third priority */
+        }
+
+        /* inheritance.*/
+#parent{
+    color: purple;
+}
+
+/* :hover*/
+/*button:hover{
+    background-color: aqua;
+    color: white;
+}
+/* :focus */
+input:focus{
+    border: 2px solid red;
+    outline: none;
+}
+/* :active*/
+button:active{
+    background-color: purple;
+    color: white
+}
+
+/* :first-child*/
+li:first-child{
+ color: green;
+ font-weight: bold;
+}
+
+/* :last-child*/
+li:last-child{
+ color: pink;
+ font-weight: bold;
+}
+
+/* :nth-child*/
+li:nth-child(2){
+ color: blue;
+ font-weight: bold;
+}
+
+/*pseudo-element in 1. :: before */
+h2::before{
+    content:"Hello ";
+    color: orange;
+}
+
+/*2. :: after */
+h3::after{
+    content:"World! ";
+    color: orangered;
+}
+
+/*3. ::first-letter*/
+.para::first-letter{
+color:red;
+font-weight: bold;
+}
+/*4. ::first-line*/
+.para2::first-line{
+    color: brown;
+    font-size: 30px;
+}
+
+/* attributes*/
+/* 1.basic attributes*/
+input[required]{
+border: 2px solid purple;
+}
+/*2. exact value selector*/
+ input[type=text]{
+    background-color: lightyellow;
+ }
+
+ /* 3.start with selector*/
+
+ a[href^="http"]{
+    color: green;
+ }
+/* 4.end with selector*/
+a[href$=".pdf"]{
+    color: red;
+}
+
+/*5. contain selector*/
+a[href*="http"]{
+    color: lightsalmon;
+}
+/*6. word selector*/
+p[class~="highlight"]{
+    color: lightcoral;
+}
+
+/*7.start with a value or value followed by hyphen */
+p[lang|="en"]{
+    color: blue;
+}
+
+/* CSS variable and CSS style*/
+/* CSS custom property*/
+/*:root method */
+
+:root{
+    --main-color:purple;
+    --text-size:30px;
+    --box-padding:10px;
+    --box-width:120px;
+    --box-height:15px;
+    --box-background-color:black;
+    --box-text-color:white;
+}
+h4{
+    color: var(--main-color);
+}
+.para3{
+     font-size: var(--text-size);
+     color: var(--main-color);
+}
+
+.box{
+    color:var(--box-text-color);
+    padding: var(--box-padding);
+    background-color: var(--box-background-color);
+    border:2px solid var(--main-color);
+    width: var(--box-width);
+    height: var(--box-height);
+}
+
+/* linear Gradient*/
+
+#box{
+    width: 1200px;
+    height: 200px;
+    border:2px solid red;
+    background:linear-gradient(to right, red,black);
+}
+
+/*radial Gradient */
+#box1{
+    width:1200px;
+    height:200px;
+    border:2px solid red;
+    background: radial-gradient(yellow,red);
+}
+
+/* conic gradient*/
+#box2{
+    width :180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid red;
+    background: conic-gradient(red,blue,green,black,purple);
+
+}
+
+#box3{
+    width: 300px;
+    padding: 20px;
+    background-color: red;
+    box-shadow: 5px 5px 10px 2px black;
+}
+#text{
+    color: gray;
+    text-shadow: 5px 5px 5px black ;
+}
+
+/*Opacity*/
+
+.box5{
+   background-color: blue;
+   opacity: 1;
+}
+.box6{
+    background-color: blue;
+    opacity: 0.5;
+}
+.box7{
+    background-color: blue;
+    opacity: 0.2;
+}
+.box9{
+     width: 200px;
+     height: 50px;
+     margin: 10px;
+     color: white;
+     padding: 10px;
+}
+
+/* !important*/
+.imp{
+color: blue;
+}
+
+.imp{
+color: red !important;
+}
+
+/*specificity*/
+
+p{
+    color: red;
+}
+.text{
+    color: blue;
+}
+#heading{
+    color: blueviolet;
+}
