@@ -1,0 +1,339 @@
+
+/* Transitions*/
+.btn{
+    background-color: blue;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 1s ease-in-out;
+}
+.btn:hover{
+    background-color: red;
+}
+
+/* Transforms*/
+
+/* 1.Translates()*/
+.translate{
+    width: 200px;
+    height: 25px;
+    border: 2px solid red;
+    background-color: skyblue;
+    transform: translate(50px,30px);
+}
+
+/* 2.rotate()*/
+
+.rotate{
+    border: 2px solid red;
+    width: 180px;
+    height: 25px;
+    transform: rotate(170deg);
+}
+/* 3.scale()*/
+.scale{
+    border: 2px solid red;
+    width: 190px;
+    height: 25px;
+    transform: translate(45px,15px) scale(1.5);
+}
+
+/* 4.skew()*/
+.skew{
+    border: 2px solid red;
+    width: 200px;
+    height: 20px;
+    transform: skew(20deg,10deg);
+}
+
+/* 5.matrix()*/
+.matrix{
+border: 2px solid red;
+width: 200px;
+height: 20px;
+background-color: green;
+transform: matrix(1,0,0,1,50,20);
+}
+
+/* CSS animation*/
+
+@keyframes move{
+ from{
+    transform: translateX(0);
+ }
+ to{
+    transform: translateX(100px);
+ }
+}
+.ani-box{
+    width: 100px;
+    height: 20px;
+    background-color: blue;
+    animation: move 3s infinite alternate;
+}
+/*Animation property*/
+@keyframes move{
+ from{
+    transform: translateX(0);
+ }
+ to{
+    transform: translateX(100px);
+ }
+}
+.aniproperty-box{
+    width: 100px;
+    height: 20px;
+    background-color:red;
+    animation: move 1s  ease-in-out 1s infinite alternate;
+}
+
+/*Animations Duration*/
+@keyframes move{
+    from{
+       transform: translateX(0);
+    }
+    to{
+       transform: translateX(300px);
+    }
+}
+
+.duration{
+    border: 2px solid red;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    animation-name: move;
+    animation-duration: 2s;
+    
+}
+
+/* Animation delay */
+
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(300px);
+    }
+}
+.delay{
+    border: 2px solid red;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    
+
+}
+
+/* animation Iteration-count*/
+@keyframes move{
+ from{
+     transform: translateX(0);
+ }
+ to{
+    transform: translateX(200px);
+ }
+}
+
+.iteration{
+    border: 2px solid red;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+/* Animation timing function */
+@keyframes move{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(200px);
+    }
+}
+.timing{
+border: 2px solid red;
+width: 300px;
+height: 30px;
+text-align: center;
+animation-name: move;
+animation-duration: 3s;
+animation-delay: 1s;
+animation-iteration-count: infinite;
+animation-timing-function:ease-in-out;
+}
+/* animation direction*/
+
+@keyframes move{
+    from{
+     transform: translateX(0);
+    }
+    to{
+        transform: translateX(200px);
+    }
+}
+.direction{
+border: 2px solid red;
+width:300px;
+height:25px;
+text-align: center;
+animation: move 3s 1s infinite alternate ease-in-out;
+}
+
+/* Responsive navigation*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: pink;
+}
+.nav-link{
+display: flex;
+gap: 20px;
+list-style: none;
+}
+.nav-link a{
+    color:brown;
+    text-decoration: none;
+}
+
+@media(max-width:600px){
+.navbar{
+    flex-direction: column;
+    }
+.nav-link{
+    flex-direction: column;
+    text-align: center;
+    padding: 0px;
+}
+}
+
+/* Responsive card*/
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aqua;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+    padding:20px;
+}
+.card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px lightblue;
+}
+.card h2{
+ color: lightcoral;
+}
+.card button{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive table */
+body{
+font-family: 'Times New Roman', Times, serif;
+margin: 20px;
+}
+.table-container{
+  width: 100%;
+  overflow-x: auto;
+}
+
+table{
+  width: 100%;
+  min-width: 450px;
+  border-collapse: collapse;
+}
+
+th,td{
+  border: 2px solid black;
+  padding: 12px;
+  text-align: center;
+}
+th{
+    background-color: blue;
+    color: white
+}
+
+tr:nth-child(even){
+    background-color:red
+}
+
+/*Responsive image*/
+
+.image{
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+.image img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* mobile first-design */
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 16px;
+}
+.mobile{
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 20px;
+}
+.cards{
+    padding: 30px;
+    background-color: blue;
+    text-align: center;
+    border-radius: 8px;
+}
+
+@media(min-width:600px){
+    .mobile{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(min-width:900px){
+    .mobile{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
