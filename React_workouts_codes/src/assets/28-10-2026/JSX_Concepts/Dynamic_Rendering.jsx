@@ -7,6 +7,7 @@ function Dynamic_rendering(){
             <h2>Dynamic rendering</h2>
             <h3>count: {count}</h3>
             <button onClick={()=>setCount(count+1)} > Increase</button>
+            <button onClick={()=>setCount(count -1)} >Decrease</button>
             </div>   
     );
 }
