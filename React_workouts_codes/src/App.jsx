@@ -7,6 +7,7 @@ import Dynamic_rendering from "./assets/28-10-2026/JSX_Concepts/Dynamic_Renderin
 import Props from "./assets/28-10-2026/Props _states/props"
 import State from "./assets/28-10-2026/Props _states/state";
 import Parent_to_child from "./assets/28-10-2026/Component_Communication/parent_to_child"
+import Parent from "./assets/28-10-2026/Component_Communication/Parent"
 //import Child_to_parent from "./assets/28-10-2026/Component_Communication/parent_to_child"
 
 function Child({handleClick}){
@@ -28,6 +29,7 @@ function App() {
   <Props name="ramesh"/>
   <State/>
   <Parent_to_child name="Sanjai kumar"/>
+  <Parent/>
 
   <Child handleClick={showmessage}/>
 
