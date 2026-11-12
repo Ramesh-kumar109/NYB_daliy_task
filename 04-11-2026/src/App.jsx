@@ -688,23 +688,32 @@
 
 
 import { BrowserRouter, Routes, Route,Link } from "react-router-dom";
-import Dashboard from "./assets/05-11-2026/React_router/Dashboard";
-import Home from "./assets/05-11-2026/React_router/Home";
-import Profile from "./assets/05-11-2026/React_router/Profile";
-import Setting from "./assets/05-11-2026/React_router/Setting";
-import Page_404 from "./assets/05-11-2026/React_router/Page_404";
- import Student from "./assets/05-11-2026/React_router/Student";
-import Home1 from "./assets/11-11-2026/Redux and Redux Toolkit/Home1";
-import Profile1 from "./assets/11-11-2026/Redux and Redux Toolkit/Profile1";
-import AccessHome from "./assets/11-11-2026/Redux/AccessHome"
-import Accessprofile from "./assets/11-11-2026/Redux/Accessprofile"
+// import Dashboard from "./assets/05-11-2026/React_router/Dashboard";
+// import Home from "./assets/05-11-2026/React_router/Home";
+// import Profile from "./assets/05-11-2026/React_router/Profile";
+// import Setting from "./assets/05-11-2026/React_router/Setting";
+// import Page_404 from "./assets/05-11-2026/React_router/Page_404";
+//  import Student from "./assets/05-11-2026/React_router/Student";
+// import Home1 from "./assets/11-11-2026/Redux and Redux Toolkit/Home1";
+// import Profile1 from "./assets/11-11-2026/Redux and Redux Toolkit/Profile1";
+// import AccessHome from "./assets/11-11-2026/Redux/AccessHome"
+// import Accessprofile from "./assets/11-11-2026/Redux/Accessprofile"
+// import AccessPerson from "./12-11-2026/Redux/AccessPerson";
+// import Homepage from "./12-11-2026/Pages/Homepage";
+// import AboutPage from "./12-11-2026/Pages/AboutPage";
+// import CounterPage from "./12-11-2026/Pages/CounterPage";
+import GetMethod from "./assets/12-11-2026/API fundamentals/GetMethod"
+import PostMethod from "./assets/12-11-2026/API fundamentals/PostMethod";
 
 function App() {
   return (
       <BrowserRouter>
-      <Link to="/">Go to home page</Link>
+      {/* <Link to="/">Go to home page</Link>
+      <Link to="/Home">HomePage </Link>{"|"} 
+      <Link to="/AboutPage">AboutPage </Link>{"|"}
+      <Link to="/CounterPage">CounterPage </Link>{"|"} */}
       <Routes>
-        <Route path="/Dashboard" element={<Dashboard/>}/>
+        {/* <Route path="/Dashboard" element={<Dashboard/>}/>
         <Route path="/Home" element={<Home/>}/>
         <Route path="/Profile" element={<Profile/>}/>
         <Route path="/Setting" element={<Setting/>}/>
@@ -714,6 +723,13 @@ function App() {
         <Route path="/Student/:id/:name" element={<Student />}/>
         <Route path="/AccessHome" element ={<AccessHome/>}/>
         <Route path="/Accessprofile" element ={<Accessprofile/>}/>
+        <Route path="./" element={< AccessPerson/>}/>
+
+        <Route path="/HomePage" element={<Homepage />} />
+        <Route path="/AboutPage" element={<AboutPage />} />
+        <Route path="/CounterPage" element={<CounterPage />}/> */}
+        <Route path="/GetMethod"element={<GetMethod />} />
+        <Route path="/PostMethod"element={<PostMethod />} />
         <Route/>
 
       </Routes>

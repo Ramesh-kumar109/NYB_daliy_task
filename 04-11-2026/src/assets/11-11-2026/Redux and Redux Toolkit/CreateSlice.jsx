@@ -1,7 +1,7 @@
 
 import { createSlice } from "@reduxjs/toolkit";
 
-const CreatSlice = createSlice({
+const CreateSlice = createSlice({
   name: "user",
 
   initialState: {
@@ -24,6 +24,6 @@ const CreatSlice = createSlice({
 });
 
 export const { changeName, resetName, updateName } =
-  userSlice.actions;
+  CreateSlice.actions;
 
-export default userSlice.reducer;
+export default CreateSlice.reducer;

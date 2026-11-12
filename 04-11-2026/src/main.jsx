@@ -1,13 +1,13 @@
-// import { StrictMode } from 'react'
-// import { createRoot } from 'react-dom/client'
-// //import './index.css'
-// import App from './App.jsx'
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+//import './index.css'
+import App from './App.jsx'
 
-// createRoot(document.getElementById('root')).render(
-//   <StrictMode>
-//     <App />
-//   </StrictMode>,
-// )
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
 
 // import ReactDom from "react-dom/client";
 // import App from "./App.jsx";
@@ -20,17 +20,39 @@
 //   </Provider>
 // );
 
-import ReactDom from "react-dom/client";
-import App from "./App.jsx";
-import Create from "./assets/11-11-2026/Redux/Create";
-import { Provider } from "react-redux";
+// import ReactDom from "react-dom/client";
+// import App from "./App.jsx";
+// import Create from "./assets/11-11-2026/Redux/Create";
+// import { Provider } from "react-redux";
 
-ReactDom.createRoot(document.getElementById("root")).render(
-  <Provider store={Create}>
-    <App />
-  </Provider>
-);
+// ReactDom.createRoot(document.getElementById("root")).render(
+//   <Provider store={Create}>
+//     <App />
+//   </Provider>
+// );
 
 //browser router  local host path name using that we can able to see the result related to particular topic 
 //without browser router we have create react appliaction again and again to see the related topic result
 //without browser router we have to comment the previous  topics in app.jsx then we  have to write agian app.jsx  
+
+
+// import ReactDom from "react-dom/client";
+// import App from "./App.jsx";
+// import Store from "./12-11-2026/Redux/Store";
+// import { Provider } from "react-redux";
+
+// ReactDom.createRoot(document.getElementById("root")).render(
+//   <Provider store={Store}>
+//     <App />
+//   </Provider>
+// );
+      // useReducer
+
+// import React from "react";
+// import ReactDom from "react-dom/client";
+// import App from "./App.jsx";
+// ReactDom.createRoot(document.getElementById("root")).render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
