@@ -687,7 +687,7 @@
 // export default App
 
 
-import { BrowserRouter, Routes, Route,Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route,Link, Router } from "react-router-dom";
 // import Dashboard from "./assets/05-11-2026/React_router/Dashboard";
 // import Home from "./assets/05-11-2026/React_router/Home";
 // import Profile from "./assets/05-11-2026/React_router/Profile";
@@ -704,6 +704,9 @@ import { BrowserRouter, Routes, Route,Link } from "react-router-dom";
 // import CounterPage from "./12-11-2026/Pages/CounterPage";
 import GetMethod from "./assets/12-11-2026/API fundamentals/GetMethod"
 import PostMethod from "./assets/12-11-2026/API fundamentals/PostMethod";
+import Login from "./16-11-2026/Conditional_Rendering_React/Login";
+import DashBoard from "./16-11-2026/Conditional_Rendering_React/DashBoard";
+import Task from "./16-11-2026/Project/Task";
 
 function App() {
   return (
@@ -730,7 +733,9 @@ function App() {
         <Route path="/CounterPage" element={<CounterPage />}/> */}
         <Route path="/GetMethod"element={<GetMethod />} />
         <Route path="/PostMethod"element={<PostMethod />} />
-        <Route/>
+        <Route path="/Login" element={<Login />}/>
+        <Route path="/DashBoard" element ={<DashBoard/>}/>
+        <Route path="/Task" element={< Task/>}/>
 
       </Routes>
       </BrowserRouter>
