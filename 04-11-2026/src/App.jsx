@@ -707,6 +707,17 @@ import PostMethod from "./assets/12-11-2026/API fundamentals/PostMethod";
 import Login from "./16-11-2026/Conditional_Rendering_React/Login";
 import DashBoard from "./16-11-2026/Conditional_Rendering_React/DashBoard";
 import Task from "./16-11-2026/Project/Task";
+import UseEffect_with_dependency from "./18-11-2026/UseEffect_Hooks/UseEffect_with_dependency";
+import UseEffect_without_dependency from "./18-11-2026/UseEffect_Hooks/UseEffect_without_dependency";
+import UseEffect_Empty_dependency from "./18-11-2026/UseEffect_Hooks/UseEffect_Empty_dependency";
+import CleanupInterval from "./18-11-2026/UseEffect_Hooks/CleanupInterval";
+import Api_Cancel_Request from "./18-11-2026/UseEffect_Hooks/Api_Cancel_Request";
+import GET_Method from "./18-11-2026/API/GET_Method";
+import POST_Method from "./18-11-2026/API/POST_Method";
+import PUT_Method from "./18-11-2026/API/PUT_Method";
+import DELETE_Method from "./18-11-2026/API/DELETE_Method";
+import PATCH_Method from "./18-11-2026/API/PATCH_Method";
+import PATCH_Axios_Method from "./18-11-2026/API/PATCH_Axios_Method";
 
 function App() {
   return (
@@ -736,7 +747,17 @@ function App() {
         <Route path="/Login" element={<Login />}/>
         <Route path="/DashBoard" element ={<DashBoard/>}/>
         <Route path="/Task" element={< Task/>}/>
-
+        <Route path="/UseEffect_with_dependency" element ={<UseEffect_with_dependency />} />
+        <Route path="/UseEffect_without_dependency" element={<UseEffect_without_dependency/>}/>
+        <Route path="UseEffect_Empty_dependency" element={<UseEffect_Empty_dependency/>}/>
+        <Route path="/CleanupInterval" element={<CleanupInterval />}/>
+        <Route path="Api_Cancel_Request" element={<Api_Cancel_Request/>}/>
+        <Route path="/GET_Method" element={<GET_Method/>} />
+        <Route  path="/POST_Method" element ={<POST_Method/>}/>
+        <Route path="/PUT_Method" element={<PUT_Method/>}/>
+        <Route path="/DELETE_Method" element={<DELETE_Method/>}/>
+        <Route path="/PATCH_Method" element={<PATCH_Method/>}/>
+        <Route path="/PATCH_Axios_Method" element={<PATCH_Axios_Method/>}/>
       </Routes>
       </BrowserRouter>
   )
