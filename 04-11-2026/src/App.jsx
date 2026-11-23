@@ -718,6 +718,21 @@ import PUT_Method from "./18-11-2026/API/PUT_Method";
 import DELETE_Method from "./18-11-2026/API/DELETE_Method";
 import PATCH_Method from "./18-11-2026/API/PATCH_Method";
 import PATCH_Axios_Method from "./18-11-2026/API/PATCH_Axios_Method";
+import Controlled_Component from "./19-11-2026/Controlled_compoenets/Controlled_Component";
+import Multiple_Controlled_Components from "./19-11-2026/Controlled_compoenets/Multiple_Controlled_Components";
+import Uncontrolled_Components from "./19-11-2026/Uncontrolled_Components/Uncontrolled_Components";
+import Multiple_Uncontrolled_Components from "./19-11-2026/Uncontrolled_Components/Multiple_Uncontrolled_Components";
+import Text_Field from "./23-11-2026/Dynamic_Form_Handling/Text_Field";
+import Task1 from "./23-11-2026_Task/Task1";
+import Task2 from "./23-11-2026_Task/Task2";
+import Dynamic_Text_field from "./23-11-2026/Dynamic_Form_Handling/Dynamic_Text_field";
+import Text_Area from "./23-11-2026/Dynamic_Form_Handling/Text_Area";
+import DroupDown from "./23-11-2026/Dynamic_Form_Handling/DroupDown";
+import RadioButton from "./23-11-2026/Dynamic_Form_Handling/RadioButton";
+import CheckBox from "./23-11-2026/Dynamic_Form_Handling/CheckBox";
+import FileInput from "./23-11-2026/Dynamic_Form_Handling/FileInput";
+import Student_Form from "./23-11-2026/Dynamic_Form_Handling/Assessment/Student_Form";
+
 
 function App() {
   return (
@@ -758,6 +773,21 @@ function App() {
         <Route path="/DELETE_Method" element={<DELETE_Method/>}/>
         <Route path="/PATCH_Method" element={<PATCH_Method/>}/>
         <Route path="/PATCH_Axios_Method" element={<PATCH_Axios_Method/>}/>
+        <Route path="/Controlled_Component" element={<Controlled_Component/>}/>
+        <Route path="/Multiple_Controlled_Components" element={<Multiple_Controlled_Components/>} />
+        <Route path="/Uncontrolled_Components" element={<Uncontrolled_Components/>}/>
+        <Route path="/Multiple_Uncontrolled_Components" element={<Multiple_Uncontrolled_Components/>}/>
+        <Route path="/Text_Field" element={<Text_Field/>}/>
+        <Route path="/Task1" element={<Task1/>}/>
+        <Route path="/Task2" element ={<Task2/>}/>
+        <Route path="/Dynamic_Text_field" element={<Dynamic_Text_field/>}/>
+        <Route path="/Text_Area" element={<Text_Area/>}/>
+        <Route path="/Droupdown" element={<DroupDown/>}/>
+        <Route path="/RadioButton" element={<RadioButton/>}/>
+        <Route path="/CheckBox" element ={<CheckBox/>}/>
+        <Route path="/FileInput" element ={<FileInput/>}/>
+        <Route path="/Student_Form" element={<Student_Form/>}/>
+ 
       </Routes>
       </BrowserRouter>
   )

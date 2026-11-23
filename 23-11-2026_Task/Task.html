@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Assessment- 3</title>
+    <link rel="stylesheet" href="./Task.css">
+    
+</head>
+<body>
+    <header class="hero">
+        <p class="eyebrow">Project about CSS selectors</p>
+        <h1> selectors.</h1>
+        <p>Selectors are usefull to design the Web page and attractive the layout on our webpage.</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p><strong>CSS Selector Studio</strong><br>Hover the chips, focus the field, and press the button.</p>
+            <p>Every interaction is styled with CSS—no JavaScript required.</p>
+        </section>
+
+        <div class="demo-grid">
+            <section class="panel">
+                <h2 class="feature-title">Attribute selectors</h2>
+                <p class="description">Match elements by their attributes: this panel uses .</p>
+                <p><a href="./">Visit the selector guide.</a></p>
+                
+                <ul class="tag-list">
+                    <li>first-child</li>
+                    <li>nth-child(2)</li>
+                    <li>last-child</li>
+                </ul>
+            </section>
+
+            <section class="panel">
+                <h2 class="feature-title">States &amp; combinators</h2>
+
+                <p class="description">Focus the field to see its sibling note respond.</p>
+
+                <label for="name-field">Your name:</label>
+
+                <input class="field" id="name-field" type="text" placeholder="Click the butto">
+
+                <p class="focus-note">This is a general sibling of the field.</p>
+
+                <p class="hint">The direct-child selector styles this tip.</p>
+                
+                <button class="button" type="button">Press and hold me</button>
+            </section>
+        </div>
+        <p class="footer-note">Reusable variables keep colors, spacing, and type consistent.</p>
+    </main>
+</body>
+</html>
