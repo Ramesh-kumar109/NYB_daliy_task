@@ -732,6 +732,22 @@ import RadioButton from "./23-11-2026/Dynamic_Form_Handling/RadioButton";
 import CheckBox from "./23-11-2026/Dynamic_Form_Handling/CheckBox";
 import FileInput from "./23-11-2026/Dynamic_Form_Handling/FileInput";
 import Student_Form from "./23-11-2026/Dynamic_Form_Handling/Assessment/Student_Form";
+import HOC from "./24-11-2026/Highter_order_components/HOC";
+import EnhancedDetail from "./24-11-2026/Highter_order_components/HOC_Pops";
+import ManagedData from "./24-11-2026/Creating_ HOC/ManagedData";
+import StoreData_HOC from "./24-11-2026/Authentication_HOC/StoreData_HOC";
+import Fragemnet from "./26-11-2026/Fragment/Fragemnet";
+import Without_Fragment from "./26-11-2026/Fragment/Without_Fragment";
+import Manage from "./26-11-2026/Fragment/Manage";
+import Custom_Hook from "./26-11-2026/Custom_Hooks/Custom_Hook";
+import Manages from "./26-11-2026/Custom_Hooks/useFetch/Manages";
+import MaintainData from "./26-11-2026/HOC_components/HOC/MaintainData";
+import Enhancedata from "./26-11-2026/HOC_components/HOC_Props/UserData";
+import DashBoardinformation from "./26-11-2026/HOC_components/Authentication/DashBoardinformation";
+import UserDetails from "./26-11-2026/HOC_components/Loading_HOC/UserDetails";
+
+
+
 
 
 function App() {
@@ -757,10 +773,10 @@ function App() {
         <Route path="/HomePage" element={<Homepage />} />
         <Route path="/AboutPage" element={<AboutPage />} />
         <Route path="/CounterPage" element={<CounterPage />}/> */}
-        <Route path="/GetMethod"element={<GetMethod />} />
-        <Route path="/PostMethod"element={<PostMethod />} />
-        <Route path="/Login" element={<Login />}/>
-        <Route path="/DashBoard" element ={<DashBoard/>}/>
+        {/* <Route path="/GetMethod"element={<GetMethod />} />
+        <Route path="/PostMethod"element={<PostMethod />} /> */}
+        {/* <Route path="/Login" element={<Login />}/> */}
+        {/* <Route path="/DashBoard" element ={<DashBoard/>}/>
         <Route path="/Task" element={< Task/>}/>
         <Route path="/UseEffect_with_dependency" element ={<UseEffect_with_dependency />} />
         <Route path="/UseEffect_without_dependency" element={<UseEffect_without_dependency/>}/>
@@ -787,6 +803,19 @@ function App() {
         <Route path="/CheckBox" element ={<CheckBox/>}/>
         <Route path="/FileInput" element ={<FileInput/>}/>
         <Route path="/Student_Form" element={<Student_Form/>}/>
+        <Route path="/HOC" element={<HOC />} />
+       <Route path="/EnhancedDetail" element={< EnhancedDetail name="Ramesh"/>}/>
+       <Route path="/ManagedData" element={<ManagedData/>}/>
+       <Route path="/StoreData_HOC" element={<StoreData_HOC/>}/> */}
+       <Route path="/Fragemnet" element={<Fragemnet />}/>
+       <Route path="Without_Fragment" element={<Without_Fragment/>}/>
+       <Route path="Manage" element={<Manage/>}/>
+       <Route path="Custom_Hook" element={<Custom_Hook/>}/>
+       <Route path="/Manages" element={<Manages/>}/>
+       <Route path="MaintainData" element={<MaintainData/>}/>
+       <Route path="/Enhancedata" element={<Enhancedata name="Ramesh kumar "/>}/>
+       <Route path="/DashBoardinformation" element={<DashBoardinformation  name="sanjai kumar"/>}/>
+      <Route path="/UserDetails" element={<UserDetails />} />
  
       </Routes>
       </BrowserRouter>
