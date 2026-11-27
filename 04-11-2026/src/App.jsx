@@ -745,6 +745,19 @@ import MaintainData from "./26-11-2026/HOC_components/HOC/MaintainData";
 import Enhancedata from "./26-11-2026/HOC_components/HOC_Props/UserData";
 import DashBoardinformation from "./26-11-2026/HOC_components/Authentication/DashBoardinformation";
 import UserDetails from "./26-11-2026/HOC_components/Loading_HOC/UserDetails";
+import ParentComponents from "./27-11-2026/PureComponents/ParentComponents";
+import Child_Components from "./27-11-2026/React_Memo()/Without_Uisng_React_Memo/Child_Components";
+import Child_Component from "./27-11-2026/React_Memo()/With_using_ReactMemo/Child_componnet";
+import UserProfile from "./27-11-2026/React_Memo()/Real_Time_Profie/UserProfile";
+import Calculating_Number from "./27-11-2026/UseMemo()/Calculating_Number";
+import Product_Flitering from "./27-11-2026/UseMemo()/Product_Flitering";
+import React_Callback from "./27-11-2026/React_Callback()/React_Callback";
+import Child from "./27-11-2026/React_Callback()/Child";
+import Usememo_Without from "./27-11-2026/UseMemo()/useMemo_without";
+
+
+
+
 
 
 
@@ -816,7 +829,15 @@ function App() {
        <Route path="/Enhancedata" element={<Enhancedata name="Ramesh kumar "/>}/>
        <Route path="/DashBoardinformation" element={<DashBoardinformation  name="sanjai kumar"/>}/>
       <Route path="/UserDetails" element={<UserDetails />} />
- 
+      <Route path="ParentComponents" element={<ParentComponents/>}/>
+      <Route path="Child_Components" element={<Child_Components name="ramesh kumar"/>}/>
+      <Route path="Child_Component" element={<Child_Component/>}/>
+      <Route path="UserProfile" element={<UserProfile/>}/>
+      <Route path="Calculating_Number" element={<Calculating_Number/>}/>
+      <Route path="Product_Flitering" element={<Product_Flitering/>}/>
+      <Route path="React_Callback" element={<React_Callback/>}/>
+      <Route path="Child" element={<Child/>}/>
+      <Route path="Usememo_Without" element={<Usememo_Without/>}/>
       </Routes>
       </BrowserRouter>
   )
